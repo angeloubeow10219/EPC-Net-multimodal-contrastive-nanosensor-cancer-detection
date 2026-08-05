@@ -1,0 +1,3 @@
+defaults: main
+modality_dropout: 0.5
+

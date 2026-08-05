@@ -1,0 +1,45 @@
+signal:
+  electrochemical_bins: 100
+  plasmonic_bins: 2000
+  embedding_dim: 512
+  classes: 2
+  mask_fraction: 0.15
+  modality_dropout: 0.30
+model:
+  electrochemical_width: 384
+  plasmonic_width: 768
+  projection_width: 1024
+  electrochemical_layers: 4
+  plasmonic_layers: 12
+  attention_heads: 12
+  state_size: 64
+  expansion: 4
+  dropout: 0.10
+loss:
+  temperature: 0.10
+  contrast_weight: 1.0
+  reconstruction_weight: 0.50
+  supervised_weight: 0.30
+  mi_gap_weight: 0.20
+  marginal_kl_weight: 0.025
+  distance_weight: 0.10
+train:
+  epochs: 100
+  batch_size: 256
+  learning_rate: 0.0001
+  weight_decay: 0.05
+  warmup_epochs: 5
+  gradient_clip: 1.0
+  workers: 16
+  precision: bf16
+  world_size: 4
+  seeds: [42, 123, 314, 271, 1234]
+  output_dir: runs
+evaluation:
+  specificity_target: 0.99
+  bootstrap_resamples: 10000
+  confidence: 0.95
+  fdr: 0.05
+  mcid: 0.05
+  calibration_bins: 15
+

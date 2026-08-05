@@ -1,0 +1,5 @@
+TCGA GDC Data Portal | GDC v45.0 | NIH GDS Open-tier | https://portal.gdc.cancer.gov/
+AACR Project GENIE Public | v18.0-public | Synapse terms of use | https://www.synapse.org/Synapse:syn7222066
+AACR Project GENIE cBioPortal | genie_public | AACR GENIE terms | https://www.cbioportal.org/study/summary?id=genie_public
+BMC Medicine SERS study article | PMC11846373 | CC BY 4.0 article | https://pmc.ncbi.nlm.nih.gov/articles/PMC11846373/
+
